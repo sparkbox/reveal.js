@@ -11,6 +11,7 @@ reveal.js comes with a broad range of features including [nested slides](https:/
 - [Examples](https://github.com/hakimel/reveal.js/wiki/Example-Presentations): Presentations created with reveal.js, add your own!
 - [Browser Support](https://github.com/hakimel/reveal.js/wiki/Browser-Support): Explanation of browser support and fallbacks.
 - [Plugins](https://github.com/hakimel/reveal.js/wiki/Plugins,-Tools-and-Hardware): A list of plugins that can be used to extend reveal.js.
+- [Sparkbox Modifications](https://github.com/sparkbox/reveal.js/wiki/Sparkbox-Modifications): Explanation for how Sparkbox uses Reveal.js.
 
 ## Online Editor
 

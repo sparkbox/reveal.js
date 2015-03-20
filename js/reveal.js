@@ -906,6 +906,10 @@
 			} );
 		}
 
+    if(config.outline === true) {
+      dom.slides.classList.add('outline-slides');
+    }
+
 		sync();
 
 	}

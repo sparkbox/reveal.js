@@ -1,0 +1,115 @@
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #222;
+
+$mainColor: #fff;
+$headingColor: #fff;
+
+$mainFontSize: 32px;
+$mainFont: Avenir Next, Helvetica, sans-serif;
+$headingFont: Avenir Next, Helvetica, sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: 4px;
+$headingTextTransform: uppercase;
+$headingFontWeight: 700;
+$linkColor: #73c5d3;
+$linkColorHover: lighten( $linkColor, 15% );
+$selectionBackgroundColor: lighten( $linkColor, 25% );
+
+$heading1Size: 80px;
+$heading2Size: 65px;
+$heading3Size: 50px;
+$heading4Size: 40px;
+
+section.has-light-background {
+	&, h1, h2, h3, h4, h5, h6 {
+		color: #1C4B54;
+	}
+}
+
+section.has-dark-background {
+	&, h1, h2, h3, h4, h5, h6 {
+		color: #b2edef;
+	}
+}
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+.reveal ol,
+.reveal ul {
+  line-height: 1.2em;
+  color: #fff;
+  margin-top: 1em;
+}
+
+.has-dark-background li {
+  margin: 1em 0;
+  text-align: left;
+  position: relative;
+  padding-left: 24px;
+
+  &:before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    border-width: 10px;
+    border-color: transparent;
+    border-left-color: $linkColor;
+    border-style: solid;
+    position: absolute;
+    left: 0;
+    top: 8px;
+  }
+}
+
+.reveal ul {
+  list-style: none;
+}
+
+.reveal hr {
+  border: 1px dashed #232323;
+  margin: 1em auto;
+  width: 50%;
+}
+
+.reveal pre code {
+  padding: .7em;
+}
+
+.screenshot {
+  width: 100%;
+}
+
+.reveal section img {
+  border: none;
+  background: none;
+  box-shadow: none;
+}
+
+body {
+  background: #50B7C5;
+}
+
+.footer-line {
+  &:before {
+    content: 'Build Right: Frontend Tooling';
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    font-size: 24px;
+    font-weight: 400;
+    padding-top: 40%;
+  }
+}
+
+.outline-slides {
+  border: 1px solid red !important;
+}
